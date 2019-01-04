@@ -61,11 +61,8 @@ void errorArgumentos() {
          << "\t[fichero_letras]\n"
          << "\t\tes la ruta al fichero que contiene la bolsa de letras\n"
          << "\t\tque se usará para la prueba\n"
-         << "\t[salida_diccionario]\n"
-         << "\t\tes la ruta al fichero donde se escribirá el diccionario\n"
-         << "\t\tproporcionado\n\n"
-         << "\tNOTA: los dos primeros ficheros deberán tener el formato\n"
-         << "\t      especificado en la documentación\n\n\n";
+         << "\tNOTA: ambos ficheros deberán tener el formato especificado\n"
+         << "\ten las clases \"Diccionario\" y \"Letras\", respectivamente.\n\n\n";
 }
 
 void juego(const Diccionario &dict, const Letras &letras) {
@@ -181,6 +178,7 @@ void juego(const Diccionario &dict, const Letras &letras) {
             cout << palabras.begin()->size() << " letras\n";
 
         if ( intento_correcto ) {
+            cout << endl;
             if ( criterio )
                 if ( mano.getPuntuacion(palabra_introducida)
                       == mano.getPuntuacion(*(palabras.begin())) )
@@ -194,14 +192,13 @@ void juego(const Diccionario &dict, const Letras &letras) {
                          << " tan buena como la mejor posible!\n";
                 else
                     cout << "¡Casi encuentras la mejor palabra!\n";
-
         }
     }
 
     cout << "[t] Tiempo usado: "
          << chrono::duration_cast<chrono::nanoseconds>(fin - inicio).count()
                 / 1000000000.0
-         << " segundos\n\n";
+         << " segundos\n";
 }
 
 int main(int argc, char* argv[]) {
@@ -306,9 +303,10 @@ int main(int argc, char* argv[]) {
         juego(dict, letras);
         cout << "\n · ¿Quieres intentarlo de nuevo? (S/n) -> ";
         cin >> cont;
+        cout << endl;
     }
 
-    cout << "\n¡Gracias por jugar! :)\n\n";
+    cout << "¡Gracias por jugar! :)\n\n";
     
     // fin del programa (POSIX)
     exit(EXIT_SUCCESS);

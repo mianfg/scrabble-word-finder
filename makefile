@@ -12,19 +12,17 @@ DOC = doc
 OUT = output
 
 all: $(BIN)/scrabble
-	$(info _____________________________________________________________________)
-	$(info )
-	$(info Los archivos han sido compilados)
-	$(info Puede también usar las siguientes órdenes make:)
-	$(info -- make doxy : genera la documentación doxygen)
-	$(info .     Aquí encontrará toda la información relativa a esta práctica)
-	$(info -- make test : ejecuta el test equivalente a:)
-	$(info .     ./bin/scrabble ./data/diccionario-es_ES.txt)
-	$(info .     ./data/bolsa-es_ES.txt ./output/diccionario-es_ES-output.txt)
-	$(info -- make clean : limpia los binarios y la documentación)
-	$(info -- make zip : crea el comprimido)
-	$(info _____________________________________________________________________)
-	$(info )
+	@echo "_____________________________________________________________________\n"
+	@echo "make all: Los archivos han sido compilados\n"
+	@echo "Puede también usar las siguientes órdenes make:"
+	@echo " - make doxy : genera la documentación doxygen"
+	@echo "      Aquí encontrará toda la información relativa a esta práctica"
+	@echo " - make test : ejecuta el test equivalente a:"
+	@echo "      ./bin/scrabble ./data/diccionario-es_ES.txt"
+	@echo "      ./data/bolsa-es_ES.txt ./output/diccionario-es_ES-output.txt"
+	@echo " - make clean : limpia los binarios y la documentación"
+	@echo " - make zip : crea el comprimido"
+	@echo "_____________________________________________________________________\n"
 
 $(BIN)/scrabble: $(OBJ)/scrabble.o $(OBJ)/Diccionario.o $(OBJ)/Letras.o
 	g++ -o $(BIN)/scrabble $(OBJ)/scrabble.o $(OBJ)/Diccionario.o $(OBJ)/Letras.o
@@ -40,6 +38,10 @@ $(OBJ)/Letras.o: $(SRC)/Letras.cpp $(INC)/Letras.h
 
 doxy:
 	doxygen doc/doxyfile
+	@echo "_____________________________________________________________________\n"
+	@echo "make test: Se ha generado la documentación. Vaya a:"
+	@echo "              ./doc/html/index.html"
+	@echo "_____________________________________________________________________\n"
 
 test:
 	./bin/scrabble ./data/diccionario-es_ES.txt ./data/bolsa-es_ES.txt ./output/diccionario-es_ES-output.txt
@@ -51,6 +53,13 @@ clean:
 	rm -fR $(DOC)/html
 	rm -fR $(DOC)/latex
 	rm -f $(OUT)/*
+	@echo "_____________________________________________________________________\n"
+	@echo "make clean: Limpiados todos los binarios y la documentación"
+	@echo "_____________________________________________________________________\n"
 
 zip: clean
 	zip -r $(ZIP)/scrabble.zip *
+	@echo "_____________________________________________________________________\n"
+	@echo "make zip: Se ha comprimido el archivo en:"
+	@echo "             ./zip/scrabble.zip"
+	@echo "_____________________________________________________________________\n"

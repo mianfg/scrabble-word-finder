@@ -34,6 +34,9 @@ class DicNodo {
      */
     std::map<char, DicNodo*> arcos;
 
+    /**
+     * @brief Constructor por defecto
+     */
     DicNodo() : es_palabra(false) {}
 
     friend class Diccionario;
@@ -151,13 +154,20 @@ public:
      *         `false` en caso contrario
      */
     bool empty() const {
-        return num_palabras == 0;
+        return raiz == 0;
     }
+
+    /**
+     * @brief Limpia el Diccionario, esto es, elimina las
+     * palabras que hay en él
+     */
+    void clear();
 
     /**
      * @brief Reconstruye diccionario a letras: sobrecarga de operador de salida
      * @param out: Flujo de salida
      * @param dict: Diccionario que se quiere mostrar
+     * @return Referencia a flujo de salida
      * 
      * Construye un diccionario legible a partir de un objeto de la clase
      * Diccionario, en estructura \a trie, hacia el formato legible por
@@ -172,6 +182,14 @@ public:
 
         return out;
     }
+
+    /**
+     * @brief Lectura de un diccionario: sobrecarga del operador de entrada 
+     * @param in: Flujo de entrada
+     * @param dic: Diccionario que se quiere leer
+     * @return Referencia a flujo de entrada
+     */
+    friend std::istream& operator>>(std::istream& in, Diccionario& dic);
 
     /**
      * @brief Busca la mejor palabra del diccionario que puede formarse desde

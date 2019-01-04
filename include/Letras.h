@@ -9,8 +9,6 @@
 #include <cstdlib>
 #include <locale>
 
-#define DEBUGMODE false
-
 /**
  * @class Letras
  * @brief TDA Letras (Bolsa de Letras)
@@ -302,10 +300,10 @@ public:
      * @brief Sobrecarga del operador de salida
      * @param out: Flujo de salida
      * @param bolsa: Bolsa que se escribirá
+     * @return Referencia al flujo de salida
      * 
-     * El formato de la salida es:
-     * 
-     * ESPECIFICAR FORMATO
+     * @see El formato de la salida coincide con el especificado en el
+     * constructor a partir de archivo, @see Letras(const std::string &filename)
      */
     friend std::ostream& operator<<(std::ostream &in, const Letras &b);
 
@@ -313,6 +311,7 @@ public:
      * @brief Sobrecarga del operador de entrada
      * @param in: Flujo de entrada
      * @param bolsa: Bolsa donde se leerán los datos
+     * @return Referencia al flujo de entrada
      * 
      * El formato de la entrada debe coincidir con el formato de la salida
      * @see operator<<

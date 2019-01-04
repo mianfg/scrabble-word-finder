@@ -6,15 +6,13 @@
 /*|__________________________________|*/
 
 Diccionario::Diccionario(const std::string &filename) {
-    std::string palabra;
-    std::ifstream archivo(filename);
-
+    // la función operator>> vacía el diccionario, \
+       creamos algo que eliminar
     raiz = new DicNodo;
-    num_palabras = 0;
 
-    while(getline(archivo, palabra))
-        if ( palabra[0] != '#' )
-            insertar(palabra);
+    std::ifstream archivo(filename);
+    archivo >> (*this);
+    archivo.close();
 }
 
 void Diccionario::insertar(const std::string &palabra) {
@@ -47,6 +45,27 @@ bool Diccionario::estaPalabra(const std::string &palabra) const {
     }
 
     return esta;
+}
+
+void Diccionario::clear() {
+    if ( !empty() ) {
+        raiz->arcos.clear();
+        num_palabras = 0;
+    }
+}
+
+std::istream& operator>>(std::istream &in, Diccionario& dic){
+    std::string palabra_leida;
+
+    // vacío
+    dic.clear();
+    
+    // inserto las palabras leidas en el diccionario
+    while ( getline(in, palabra_leida) )
+        if ( palabra_leida[0] != '#' )
+            dic.insertar(palabra_leida);
+
+    return in;
 }
 
 void stringAssign(std::string &str, unsigned int loc, const char &c) {
