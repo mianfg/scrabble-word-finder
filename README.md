@@ -46,11 +46,7 @@ Haz un `clone` de este repositorio o descárgalo, luego cerciórate que tienes l
 └── zip
 ~~~
 
-Es **muy importante** que todas las carpetas estén creadas. Para estar seguro, ejecuta la siguiente orden en un terminal Linux:
-
-~~~
-mkdir bin obj output zip
-~~~
+Es **muy importante** que todas las carpetas estén creadas.
 
 Luego, ejecuta la orden `make`. Dicha orden dará más instrucciones sobre cómo ejecutar la práctica. También te recomendamos hacer
 
