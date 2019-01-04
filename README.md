@@ -6,11 +6,15 @@ Este programa es la práctica final de la asignatura **Estructura de Datos** del
 * Miguel Ángel Fernández Gutiérrez ([@mianfg](https://github.com/mianfg))
 * Juan Manuel Mateos Pérez ([@Trajano1999](https://github.com/Trajano1999))
 
+---
+
 > **DISCLAIMER**
 >
 > SCRABBLE® is a registered trademark. All intellectual property rights in and to the game are owned in the U.S.A and Canada by Hasbro Inc., and throughout the rest of the world by J.W. Spear & Sons Limited of Maidenhead, Berkshire, England, a subsidiary of Mattel Inc. Mattel and Spear are not affiliated with Hasbro. Words with Friends is a trademark of Zynga with Friends.
 >
-> This project is not affiliated with SCRABBLE®, Mattel Inc, Hasbro Inc, Zynga with Friends or Zynga Inc in any way. This site is for entertainment purposes only.
+> This project is not affiliated with SCRABBLE®, Mattel Inc, Hasbro Inc, Zynga with Friends or Zynga Inc in any way. This project is for educational purposes only.
+
+---
 
 ## Compilación y ejecución
 
@@ -42,7 +46,7 @@ Haz un `clone` de este repositorio o descárgalo, luego cerciórate que tienes l
 └── zip
 ~~~
 
-Es **muy importante** que todas las carpetas estén creadas. Para cerciorarte, ejecuta la siguiente orden en un terminal Linux:
+Es **muy importante** que todas las carpetas estén creadas. Para estar seguro, ejecuta la siguiente orden en un terminal Linux:
 
 ~~~
 mkdir bin obj output zip
