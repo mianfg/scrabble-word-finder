@@ -46,7 +46,7 @@ Haz un `clone` de este repositorio o descárgalo, luego cerciórate que tienes l
 └── zip
 ~~~
 
-Es **muy importante** que todas las carpetas estén creadas. Para cerciorarte, ejecuta la siguiente orden en un terminal Linux:
+Es **muy importante** que todas las carpetas estén creadas. Para estar seguro, ejecuta la siguiente orden en un terminal Linux:
 
 ~~~
 mkdir bin obj output zip
