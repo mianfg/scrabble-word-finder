@@ -1,0 +1,29 @@
+# SCRABBLE WORD FINDER V1 - BOLSA DE LETRAS
+# Bolsa de letras oficial Scrabble en español (es_ES)
+# NOTA: se excluyen las letras dobles CH, LL y RR, en su lugar se aumenta
+#       el número de C, H, L y R para coincidir
+A	1	12
+E	1	12
+O	1	9
+I	1	6
+S	1	6
+N	1	5
+R	1	7
+U	1	5
+L	1	6
+T	1	4
+D	2	5
+G	2	2
+C	3	2
+B	3	2
+M	3	2
+P	3	2
+H	4	3
+F	4	1
+V	4	1
+Y	4	1
+Q	5	1
+J	8	1
+# Ñ	8	1
+X	8	1
+Z	10	1
