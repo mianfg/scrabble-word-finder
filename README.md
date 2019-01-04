@@ -1,7 +1,7 @@
 # Scrabble Word Finder
 > Programa para buscar la mejor palabra de un set de Letras que se encuentre en un cierto Diccionario
 
-Este programa es la práctica final de la asignatura **Estructura de Datos** del **Doble Grado en Ingeniería Informática y Matemáticas**, curso 2018/2019. Ha sido desarrollada por los siguientes alumnos:
+Este programa es la práctica final de la asignatura **Estructura de Datos** del **Doble Grado en Ingeniería Informática y Matemáticas** de la **Universidad de Granada**, curso 2018/2019. Ha sido desarrollada por los siguientes alumnos:
 
 * Miguel Ángel Fernández Gutiérrez ([@mianfg](https://github.com/mianfg))
 * Juan Manuel Mateos Pérez ([@Trajano1999](https://github.com/Trajano1999))
@@ -46,11 +46,7 @@ Haz un `clone` de este repositorio o descárgalo, luego cerciórate que tienes l
 └── zip
 ~~~
 
-Es **muy importante** que todas las carpetas estén creadas. Para estar seguro, ejecuta la siguiente orden en un terminal Linux:
-
-~~~
-mkdir bin obj output zip
-~~~
+Es **muy importante** que todas las carpetas estén creadas.
 
 Luego, ejecuta la orden `make`. Dicha orden dará más instrucciones sobre cómo ejecutar la práctica. También te recomendamos hacer
 
