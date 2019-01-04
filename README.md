@@ -18,7 +18,7 @@ Este programa es la práctica final de la asignatura **Estructura de Datos** del
 
 ## Compilación y ejecución
 
-Haz un `clone` de este repositorio o descárgalo, luego cerciórate que tienes la siguiente estructura de archivos:
+[Descarga la última versión](https://github.com/mianfg/scrabble-word-finder/archive/v1.0.zip) de este proyecto o haz `clone`, luego cerciórate que tienes la siguiente estructura de archivos:
 
 ~~~
 .
