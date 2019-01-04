@@ -10,7 +10,7 @@ Este programa es la práctica final de la asignatura **Estructura de Datos** del
 >
 > SCRABBLE® is a registered trademark. All intellectual property rights in and to the game are owned in the U.S.A and Canada by Hasbro Inc., and throughout the rest of the world by J.W. Spear & Sons Limited of Maidenhead, Berkshire, England, a subsidiary of Mattel Inc. Mattel and Spear are not affiliated with Hasbro. Words with Friends is a trademark of Zynga with Friends.
 >
-> This project is not affiliated with SCRABBLE®, Mattel Inc, Hasbro Inc, Zynga with Friends or Zynga Inc in any way. This site is for entertainment purposes only.
+> This project is not affiliated with SCRABBLE®, Mattel Inc, Hasbro Inc, Zynga with Friends or Zynga Inc in any way. This project is for educational purposes only.
 
 ## Compilación y ejecución
 
